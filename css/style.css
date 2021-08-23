@@ -1309,6 +1309,11 @@ textarea:focus, input:focus,
         opacity: 1;
         visibility: visible;
     }
+    .dropdown-content{
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
     .nav-header li a:hover, .nav-header .lang-word:hover{
         color: #000;
     }
