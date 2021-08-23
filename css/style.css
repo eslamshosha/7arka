@@ -269,6 +269,7 @@ html[dir=rtl] .nav-header .dropdown li{
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .main .slider-captions{
     text-decoration: none;
