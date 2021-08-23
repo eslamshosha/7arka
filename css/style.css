@@ -160,15 +160,11 @@ html[dir=rtl] .img-logo .logo-link::after{
 .top-header a{
     text-decoration: none;
 }
+.top-header .menu-bars:hover{
+    color: #000;
+}
 .testtttt{
     display: flex;
-}
-.navgition{
-    margin-right: 50px;
-}
-html[dir=rtl] .navgition{
-    margin-right: 0;
-    margin-left: 50px;
 }
 .show-icons{
     display: none;
@@ -1433,6 +1429,14 @@ textarea:focus, input:focus,
     .second-footer .image-mob{
         display: none;
     }
+    
+    .navgition{
+        margin-right: 50px;
+    }
+    html[dir=rtl] .navgition{
+        margin-right: 0;
+        margin-left: 50px;
+    }
 }
 
 .fixall{
@@ -1445,8 +1449,7 @@ textarea:focus, input:focus,
 
 
 /*overlay*/
-.overlay-box,
-.overlay-box2 {
+.overlay-box {
     position: fixed;
     top: 0;
     left: 0;
@@ -1457,7 +1460,4 @@ textarea:focus, input:focus,
     background-color: #000;
     opacity: .4;
     display: none;
-}
-.overlay-box2{
-    opacity: 0;
 }
