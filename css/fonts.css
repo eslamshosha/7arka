@@ -49,6 +49,12 @@
 @font-face {
     font-family: "montserrat";
     src: url("../webfonts/montserrat/Montserrat-ExtraBold.woff2") format("woff2"), url("../webfonts/montserrat/Montserrat-ExtraBold.woff") format("woff"), url("../webfonts/montserrat/Montserrat-ExtraBold.ttf") format("truetype");
-    font-weight: 900;
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "rpt";
+    src: url("../webfonts/montserrat/rpt-Bold.woff2") format("woff2"), url("../webfonts/montserrat/rpt-Bold.woff") format("woff"), url("../webfonts/montserrat//rpt-Bold.ttf") format("truetype");
+    font-weight: 700;
     font-style: normal;
 }

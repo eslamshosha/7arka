@@ -53,7 +53,7 @@ body {
     top: 32px;
     transform: translateX(-50%);
     padding: 4px 0 4px;
-    /* transition: all 0.3s ease-in-out; */
+    transition: all 0.3s ease-in-out;
 }
 
 .dropdown-content::before {
@@ -279,6 +279,9 @@ html[dir=rtl] .nav-header .dropdown li{
     transform: translate(-50%, -50%);
     width: 60%;
 }
+html[dir=rtl] .main .slider-captions{
+    width: 50%;
+}
 .slider-captions .captions-head{
     font-size: 75px;
     line-height: 75px;
@@ -287,6 +290,14 @@ html[dir=rtl] .nav-header .dropdown li{
     text-transform: uppercase;
     cursor: pointer;
     transition: all .3s ease-in-out;
+}
+.captions-head .dis-cap{
+    display: block;
+}
+html[dir=rtl] .slider-captions .captions-head{
+    font-size: 90px;
+    font-family: "rpt";
+    line-height: 80px;
 }
 .slider-captions .captions-head:hover{
     color: #ba2221;
@@ -401,7 +412,7 @@ html[dir=rtl] .nav-header .dropdown li{
     text-transform: uppercase;
 }
 .service-grid .service-box{
-    clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 94.5% 100%, 0% 100%);
     position: relative;
     padding-bottom: 70%;
     display: flex;
@@ -410,13 +421,13 @@ html[dir=rtl] .nav-header .dropdown li{
     transition: all .3s ease-in-out;
 }
 .service-grid .col-lg-6:nth-child(even) .service-box{
-    clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(5.5% 0, 100% 0, 100% 100%, 0 100%);
 }
 html[dir=rtl] .service-grid .col-lg-6:nth-child(even) .service-box{
-    clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 94.5% 100%, 0% 100%);
 }
 html[dir=rtl] .service-grid .col-lg-6:nth-child(odd) .service-box{
-    clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(5.5% 0, 100% 0, 100% 100%, 0 100%);
 }
 .service-grid .col-lg-6:nth-child(3) .service-box,
 .service-grid .col-lg-6:nth-child(4) .service-box{
@@ -918,13 +929,21 @@ html[dir=rtl] footer::after{
     color: #fff;
     font-family: "TajawalMedium";
     line-height: 20px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
 }
+.footer-location .location-pargh:hover,
+.footer-mail .mail-pargh:hover{
+    color: #ba2221;
+}
+
 .location-pargh .line-break{
     display: flex;
 }
 .footer-mail{
     display: flex;
     margin-bottom: 55px;
+    align-items: center;
 }
 .footer-mail a{
     text-decoration: none;
@@ -1028,7 +1047,7 @@ html[dir=rtl] .social-links a:last-of-type{
 }
 textarea:focus, input:focus,
 .right-col .btn.dropdown-toggle:focus{
-    outline: 1px solid #ba2221;
+    outline: 2px solid #ba2221;
 }
 .right-col textarea{
     background-color: #212121;
@@ -1050,7 +1069,11 @@ textarea:focus, input:focus,
     font-family: "TajawalBold";
     padding: 0;
     margin-bottom: 0;
-    
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+.right-col input[type="submit"]:hover{
+    background-color: #e03736;
 }
 .right-col .div-submit{
     text-align: end;
@@ -1116,7 +1139,7 @@ textarea:focus, input:focus,
         display: none;
     }
     .img-logo .logo-link img{
-        width: 85px;
+        width: 117px;
     }
     .lang-section{
         padding-left: 22px;
@@ -1150,8 +1173,8 @@ textarea:focus, input:focus,
     .show-icons{
         display: block;
     }
-    .navgition .dropdown-content{
-        display: none;
+    .dropdown-content{
+        /* display: none; */
         transition: none;
     }
     .nav-header{
@@ -1179,6 +1202,7 @@ textarea:focus, input:focus,
         font-size: 16px;
         color: #000;
         font-family: "TajawalMedium";
+        text-transform: uppercase;
     }
     .navgition {
         display: block;
@@ -1337,12 +1361,23 @@ textarea:focus, input:focus,
         font-size: 40px;
         line-height: 44px;
     }
+    html[dir=rtl] .slider-captions .captions-head{
+        font-size: 50px;
+        line-height: 50px;
+    }
     .main-slider{
         clip-path: polygon(0px 0px, 100% 0px, 100% 89%, 80% 95%, 0px 89%);
     }
 
     /*   main-slider  */
     /* our service */
+    .service-header .service-head{
+        font-size: 30px;
+    }
+    .service-box .service-span{
+        font-size: 30px;
+    }
+
     .service-grid .service-box,
     .service-grid .col-lg-6:nth-child(even) .service-box,
     html[dir=rtl] .service-grid .col-lg-6:nth-child(odd) .service-box,
@@ -1368,6 +1403,10 @@ textarea:focus, input:focus,
     }
     .partenrs-section{
         padding-bottom: 60px;
+    }
+    .clints-header .clints-head,
+    .partenrs-header .partenrs-head{
+        font-size: 30px;
     }
     /* partners section*/
     /*  video-section  */
@@ -1438,7 +1477,12 @@ textarea:focus, input:focus,
         margin-left: 50px;
     }
 }
-
+@media (max-width: 767px){
+    .main .slider-captions,
+    html[dir="rtl"] .main .slider-captions{
+        width: 100%;
+    }
+}
 .fixall{
     text-decoration: none;
     margin: 0;
