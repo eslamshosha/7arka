@@ -117,7 +117,33 @@ $(document).ready(function() {
         },
     });
 
-    
+    ///////// ** details** /////////
+    var specials = new Swiper('.details-section .swiper-container', {
+        loop: true,
+        autoplay: true,
+        pagination: {
+            el: '.details-section .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.details-section .swiper-button-prev',
+            prevEl: '.details-section .swiper-button-next',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            767: {
+                slidesPerView: 1,
+            },
+            992: {
+                slidesPerView: 1,
+            },
+            1199: {
+                slidesPerView: 1,
+            },
+        },
+    });
         
 
     ////select bootstrap
