@@ -149,14 +149,8 @@ $(document).ready(function() {
     ////select bootstrap
     $('select').selectpicker();
 
+    
 
-    //to change logo in mobile size
-    var example = document.getElementById('slam');
-    if ($(window).width() <= 1199) {
-        example.setAttribute("src", "images/red-logo.png");
-    } else {
-        example.setAttribute("src", "images/logo.png");
-    }
 
     //search filter
     var acc = document.getElementsByClassName("accordion");
@@ -169,10 +163,29 @@ $(document).ready(function() {
         if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
         } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.maxHeight = panel.scrollHeight + 500 + "px";
         } 
     });
     }
+
+    // commonjs // flatpicker date input
+    $(".selector").flatpickr(
+        {
+            minDate: "today",
+            // maxDate: new Date().fp_incr(14), // 14 days from now
+            defaultDate: "today"
+        }
+    );
+    //file input
+    $(".custom-file-upload .upload-change").change(function() {
+        let file_val;
+        if($(this).val() == '') {
+            file_val = $('.file-txt').data('title');
+        } else {
+            file_val = $(this).prop('files')[0].name;
+        }
+        $('.file-txt').html(file_val); 
+      });
 });
 
 

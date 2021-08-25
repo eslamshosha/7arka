@@ -163,7 +163,7 @@ html[dir=rtl] .img-logo .logo-link::after{
 .top-header .menu-bars:hover{
     color: #000;
 }
-.testtttt{
+.show-icons-parent{
     display: flex;
 }
 .show-icons{
@@ -1060,6 +1060,7 @@ textarea:focus, input:focus,
     font-family: "TajawalMedium";
     color: #828282;
     border: none;
+    padding-top: 10px;
     padding-inline-start: 25px;
     margin-bottom: 15px;
 }
@@ -1129,9 +1130,18 @@ textarea:focus, input:focus,
     margin-inline-start: 5px;
 }
 /*                                footer                            */
+#logo-small{
+    display: none;
+}
 /*                                    media query                                    */
 @media (max-width: 1199px){
 /*   header    */
+    #logo-big{
+        display: none;
+    }
+    #logo-small{
+        display: block;
+    }
     .top-header{
         position: relative;
     }
@@ -1217,7 +1227,7 @@ textarea:focus, input:focus,
         bottom: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(186, 34, 33, .969);
+        background-color: rgb(186, 34, 33, 1);
         transition: .4s;
         z-index: 200;
         overflow-y: auto;
@@ -1627,7 +1637,7 @@ textarea:focus, input:focus,
 }
 /* Hide the browser's default checkbox */
 label.check-label{
-    padding-inline-start: 40px;
+    padding-inline-start: 35px;
     margin-bottom: 50px;
 }
 .check-group input[type="checkbox"] {
@@ -1654,10 +1664,11 @@ html[dir=rtl] .check-group .checkmark{
 /* On mouse-over, add a grey background color */
 .check-group:hover input ~ .checkmark {
     background-color: #ccc;
+    transition: all .3s ease-in-out;
 }
 /* When the checkbox is checked, add a blue background */
 .check-group input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #ba2221;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
@@ -1670,7 +1681,7 @@ html[dir=rtl] .check-group .checkmark{
     display: block;
 } 
 /* Style the checkmark/indicator */
-.check-group .checkmark:after {
+/* .check-group .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -1680,7 +1691,16 @@ html[dir=rtl] .check-group .checkmark{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-} 
+}  */
+.check-group .checkmark:after{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    color: #ccc;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+}
 .book-form input[type="submit"] {
     width: 157px;
     height: 46px;
@@ -1713,6 +1733,12 @@ html[dir=rtl] .check-group .checkmark{
     position: relative;
     height: 828px;
     margin-bottom: 95px;
+}
+.main-video .main-video-cont{
+    height: 100%;
+}
+.main-video .main-video-cont video{
+    object-fit: cover;
 }
 .main-video::after{
     position: absolute;
@@ -1879,7 +1905,6 @@ html[dir=rtl] .check-group .checkmark{
     line-height: 55px;
     height: 55px;
     /* padding: 14px; */
-    padding: 0 20px;
     width: 100%;
     border: none;
     text-align: left;
@@ -1887,8 +1912,12 @@ html[dir=rtl] .check-group .checkmark{
     font-size: 18px;
     font-family: "TajawalBlack";
     border-radius: 3px;
+    text-align: start;
     transition: 0.4s;
 }  
+.search-filter .accordion.fliter-head{
+    padding: 0 18px;
+}
 .search-filter .active, .accordion:hover {
     background-color: #000;
 }
@@ -1914,6 +1943,9 @@ html[dir=rtl] .check-group .checkmark{
     float: right;
     margin-left: 5px;
 }
+html[dir=rtl] .search-filter .accordion:after{
+    float: left;
+}
   
 .search-filter .active:after {
     content: "\f139";
@@ -1930,34 +1962,65 @@ html[dir=rtl] .check-group .checkmark{
     background-color: white;
     max-height: 0;
     overflow: hidden;
+    padding: 0 20px;
     transition: max-height 0.2s ease-out;
 }
-.search-filter .inside-panel{
+/* .search-filter .inside-panel{
     padding: 0 18px;
-}
+} */
 .search-filter .date-div{
     font-family: "TajawalMedium";
     font-size: 13px;
     color: #000;
+    margin-bottom: 15px;
+    text-align: start;
 }
-.search-filter .panel-after{
+
+.search-filter .input-date{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 10px;
+    font-family: "TajawalMedium";
+    color: #828282;
+    border: none;
+    outline: none;
+}
+.search-filter .date-div-cont{
     position: relative;
-    margin-bottom: 20px;
 }
-.search-filter .panel-after::after{
-    content: "";
-    border-bottom: 1px solid #DCE2E8;
-    width: 227px;
+.search-filter .date-div-cont i{
     position: absolute;
-    top: 75px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999999;
+}
+html[dir=rtl] .search-filter .date-div-cont i{
+    right: auto;
     left: 15px;
 }
+.search-filter .panel.inside-panel{
+    padding: 0;
+}
+.search-filter .panel.inside-panel.panel-after{
+    position: relative;
+    /* margin-bottom: 20px; */
+    border-bottom: 1px solid #f0f0f0;
+}
+.search-filter .second-date{
+    padding-bottom: 15px;
+}
+
+
 /*custom radio button*/
 /* Customize the label (the filter-radio) */
 .form-filter .filter-radio {
     display: block;
     position: relative;
-    padding-left: 30px;
+    padding-inline-start: 30px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 16px;
@@ -1986,6 +2049,10 @@ html[dir=rtl] .check-group .checkmark{
     width: 15px;
     background-color: #f5f7f7;
     border-radius: 50%;
+}
+html[dir=rtl] .form-filter .checkmark{
+    left: auto;
+    right: 0;
 }
   
   /* On mouse-over, add a grey background color */
@@ -2163,6 +2230,10 @@ html[dir=rtl] .check-group .checkmark{
     border: 1px solid #BDBDBD;
     transition: all .3s ease-in-out;
 }
+.events-pagention a.active{
+    color: #fff;
+    background-color: #c62828;
+}
 .events-pagention span{
     font-size: 11px;
 }
@@ -2189,7 +2260,14 @@ html[dir=rtl] .events-pagention span{
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
     }
+    .search-filter{
+        margin-bottom: 30px;
+    }
+    .events-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
+
 /****************************events-box*******************************************/
 /*******************************************events*******************************************/
 /*******************************************details*******************************************/
@@ -2550,6 +2628,32 @@ html[dir=rtl] .details-sec-img .swiper-button-prev {
 .career-form input:focus{
     outline: 2px solid #ba2221;
 }
+.career-form .date-div-cont {
+    position: relative;
+}
+.career-form .input-date{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 3px;
+    /* padding: 10px; */
+    font-family: "TajawalMedium";
+    color: #828282;
+    border: none;
+    outline: none;
+}
+.career-form .date-div-cont i{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999999;
+}
+html[dir=rtl] .career-form .date-div-cont i{
+    right: auto;
+    left: 15px;
+}
 
 .career-form input[type="submit"] {
     width: 157px;
@@ -2570,7 +2674,7 @@ html[dir=rtl] .details-sec-img .swiper-button-prev {
 .career-form .div-submit{
     text-align: center;
 }
-.career-form input[type="file"] {
+/* .career-form input[type="file"] {
     width: 157px;
     height: 46px;
     background-color: #f2f2f2;
@@ -2582,6 +2686,28 @@ html[dir=rtl] .details-sec-img .swiper-button-prev {
     margin-bottom: 0;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
+} */
+.career-form input[type="file"] {
+    display: none;
+}
+.career-form .custom-file-upload {
+    background-color: #f2f2f2;
+    border: none;
+    display: block;
+    padding: 0;
+    line-height: 50px;
+    text-align: center;
+    width: 195px;
+    height: 50px;
+    cursor: pointer;
+    color: #999999;
+    font-family: "TajawalMedium";
+}
+.career-form .custom-file-upload::after{
+    display: none;
+}
+.career-form .custom-file-upload i{
+    font-size: 18px;
 }
 .career-form .dropdown{
     align-items: center;
@@ -2640,7 +2766,7 @@ html[dir=rtl] .details-sec-img .swiper-button-prev {
     margin-bottom: 15px;
 }
 .career-form label.check-label {
-    padding-inline-start: 40px;
+    padding-inline-start: 35px;
     margin-bottom: 50px;
 }
 /*******************************************careers form*******************************************/
@@ -2748,6 +2874,7 @@ footer.contact-page::after{
     font-family: "TajawalMedium";
     color: #828282;
     border: none;
+    padding-top: 10px;
     padding-inline-start: 25px;
     margin-bottom: 15px;
 }

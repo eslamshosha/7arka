@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/Linearicons.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,9 +27,9 @@
             <div class="container">
                 <div class="nav-header plus-class">
                     <figure class="img-logo">
-                        <a href="#" class="logo-link"><img src="images/logo.png" class="img-fluid" id="slam"></a>
+                        <a href="#" class="logo-link"><img src="images/logo.png" class="img-fluid" id="logo-big"><img src="images/red-logo.png" class="img-fluid" id="logo-small"></a>
                     </figure>
-                    <div class="testtttt">
+                    <div class="show-icons-parent">
                         <div class="show-icons">
                             <a class="menu-bars fixall" id="menu-id" href="#!">
                                 <i class="fas fa-bars"></i>
@@ -65,8 +66,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        الأحداث
+                                    <a href="events-ar.html">
+                                        events
                                     </a>
                                 </li>
                                 <li>
@@ -229,8 +230,13 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group required">
-                                <label>Upload CV</label><br>
-                                <input type="file">
+                                <label>Upload CV</label>
+                                <label class="custom-file-upload">
+                                    <input type="file" class="upload-change">
+                                    <!-- <span class="upload-btn"></span> -->
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span class="upload-btn file-txt" data-title="Upload CV">Upload CV</span>
+                                </label>
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -345,6 +351,7 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/script.js"></script>
 
 </body>
