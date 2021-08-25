@@ -172,7 +172,7 @@ $(document).ready(function() {
     $(".selector").flatpickr(
         {
             minDate: "today",
-            // maxDate: new Date().fp_incr(14), // 14 days from now
+            maxDate: new Date().fp_incr(14), // 14 days from now
             defaultDate: "today"
         }
     );
