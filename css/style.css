@@ -1803,7 +1803,7 @@ html[dir=rtl] .check-group .checkmark{
     transition: all .5s ease-in-out;
 }
 .vision-figure img:hover{
-    transform: rotate(360deg);
+    transform: translateY(-10px);
 }
 .vision-head{
     font-family: "TajawalExtraBold";
@@ -1882,7 +1882,7 @@ html[dir=rtl] .check-group .checkmark{
     transition: all .5s ease-in-out;
 }
 .Value-figure img:hover{
-    transform: rotate(360deg);
+    transform: translateY(-10px)
 }
 .Value-pargh{
     font-family: "TajawalRegular";
