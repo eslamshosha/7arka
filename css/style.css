@@ -1211,8 +1211,13 @@ textarea:focus, input:focus,
         color: #048dfd;
         background-color: #dfeaf8;
     } */
-    .menu-bars i{
-        margin-right: 8px;
+    .menu-bars{
+        display: flex;
+        align-items: center;
+    }
+    .menu-bars .lnr{
+        margin-inline-end: 8px;
+        font-size: 18px;
     }
     .menu-bars .bars-word{
         font-size: 16px;
@@ -1262,7 +1267,7 @@ textarea:focus, input:focus,
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 0 50px;
+        padding: 15px 0 50px;
     }
     .nav-head .first-head{
         display: flex;
@@ -1725,7 +1730,11 @@ html[dir=rtl] .check-group .checkmark{
 }
 @media (max-width: 1199px){
     .main-backround{
+        height: 200px;
         clip-path: polygon(0px 0px, 100% 0px, 100% 89%, 80% 95%, 0px 89%);
+    }
+    .breadcrumb-sec .page-head{
+        font-size: 24px;
     }
 }
 /*book form*/
@@ -1902,12 +1911,16 @@ html[dir=rtl] .check-group .checkmark{
     }
     .glance-cont .glance-pargh{
         padding: 0;
+        text-align: center;
     }
     .Commitment-cont{
         padding: 0;
     }
     .Commitment-cont::before{
         top: -315px;
+    }
+    .commitment-pargh{
+        text-align: center;
     }
     .vision-box{
         margin-bottom: 60px;
