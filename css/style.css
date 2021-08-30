@@ -1158,11 +1158,7 @@ textarea:focus, input:focus,
         width: 117px;
     }
     .lang-section{
-        padding-left: 22px;
-    }
-    html[dir=rtl] .lang-section{
-        padding-left: 0;
-        padding-right: 22px;
+        padding-inline-start: 22px;
     }
     .lang-section .lang-word{
         color: #6e6e6e;
@@ -1507,6 +1503,11 @@ textarea:focus, input:focus,
     .main .slider-captions,
     html[dir="rtl"] .main .slider-captions{
         width: 100%;
+    }
+}
+@media (max-width: 320px){
+    .lang-section{
+        padding-inline-start: 12px;
     }
 }
 .fixall{
