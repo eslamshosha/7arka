@@ -136,45 +136,49 @@
                         <div class="search-filter collapse-block-om">        
                             <button class="accordion fliter-head collapse-head-om">Search Filters</button>
                             <div class="panel list-collapse-om">
-                                <button class="accordion accr-below collapse-head-om">Date</button>
-                                <div class="panel inside-panel panel-after list-collapse-om">
-                                    <div class="date-div">
-                                        <label for="start">From</label>
-                                        <div class="date-div-cont">
-                                            <input class="select-date input-date" type="text">
-                                            <i class="fas fa-calendar-alt"></i>
+                                <div class="acco-cont">
+                                    <button class="accordion accr-below accr-below-parent">Date</button>
+                                    <div class="panel inside-panel panel-after accr-below-child">
+                                        <div class="date-div">
+                                            <label for="start">From</label>
+                                            <div class="date-div-cont">
+                                                <input class="select-date input-date" type="text">
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="date-div second-date">
-                                        <label for="start">To</label>
-                                        <div class="date-div-cont">
-                                            <input class="select-date input-date" type="text" >
-                                            <i class="fas fa-calendar-alt"></i>
+                                        <div class="date-div second-date">
+                                            <label for="start">To</label>
+                                            <div class="date-div-cont">
+                                                <input class="select-date input-date" type="text" >
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="accordion accr-below collapse-head-om">Categories</button>
-                                <div class="panel inside-panel list-collapse-om">
-                                    <form action="" method="get">
-                                        <div class="form-filter">
-                                            <label class="filter-radio">Running
-                                                <input type="radio" checked="checked" name="radio">
-                                                <span class="checkmark"></span>
-                                              </label>
-                                              <label class="filter-radio">Yoga
-                                                <input type="radio" name="radio">
-                                                <span class="checkmark"></span>
-                                              </label>
-                                              <label class="filter-radio">Cycling
-                                                <input type="radio" name="radio">
-                                                <span class="checkmark"></span>
-                                              </label>
-                                              <label class="filter-radio">Outdoor workout
-                                                <input type="radio" name="radio">
-                                                <span class="checkmark"></span>
-                                              </label>
-                                        </div>
-                                    </form>
+                                <div class="acco-cont">
+                                    <button class="accordion accr-below accr-below-parents">Categories</button>
+                                    <div class="panel inside-panel accr-below-childs">
+                                        <form action="" method="get">
+                                            <div class="form-filter">
+                                                <label class="filter-radio">Running
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="filter-radio">Yoga
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="filter-radio">Cycling
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="filter-radio">Outdoor workout
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +209,7 @@
                                         <span class="last-price">Minimum: 100 SAR</span>
                                     </div>
                                     <div class="book-link">
-                                        <a href="#" class="book-button">Book Now</a>
+                                        <a href="details.html" class="book-button">Book Now</a>
                                     </div>
                                 </div>
                             </div>

@@ -1987,6 +1987,7 @@ html[dir=rtl] .search-filter .accordion:after{
 .search-filter .accr-below.active:after {
     content: "\f078";
 }
+
   
 .search-filter .panel {
     background-color: white;

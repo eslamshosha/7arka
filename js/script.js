@@ -170,7 +170,40 @@ $(document).ready(function() {
                 });
             }
         });
-        console.log("eslam");
+    });
+    $('.accr-below-parent').on('click', function (e) {
+        e.preventDefault();
+        
+        $('.accr-below-parent').not(this).parent().find('.accr-below-child').slideUp();
+        $(this).parent().find('.accr-below-child').slideToggle({
+            queue: false,
+            complete: function () {
+                $(".accr-below-child").each(function () {
+                    if ($(this).css("display") == "none") {
+                        $(this).siblings().removeClass("active");
+                    } else {
+                        $(this).siblings().addClass("active")
+                    }
+                });
+            }
+        });
+    });
+    $('.accr-below-parents').on('click', function (e) {
+        e.preventDefault();
+        
+        $('.accr-below-parents').not(this).parent().find('.accr-below-childs').slideUp();
+        $(this).parent().find('.accr-below-childs').slideToggle({
+            queue: false,
+            complete: function () {
+                $(".accr-below-childs").each(function () {
+                    if ($(this).css("display") == "none") {
+                        $(this).siblings().removeClass("active");
+                    } else {
+                        $(this).siblings().addClass("active")
+                    }
+                });
+            }
+        });
     });
     // commonjs // flatpicker date input
     $(".selector").flatpickr(

@@ -134,45 +134,49 @@
                         <div class="search-filter">        
                             <button class="accordion fliter-head collapse-head-om">فلترة البحث</button>
                             <div class="panel list-collapse-om">
-                                <button class="accordion accr-below collapse-head-om">التاريخ</button>
-                                <div class="panel inside-panel panel-after list-collapse-om">
-                                    <div class="date-div">
-                                        <label for="start">من</label>
-                                        <div class="date-div-cont">
-                                            <input class="select-date input-date" type="text" >
-                                            <i class="fas fa-calendar-alt"></i>
+                                <div class="acco-cont">
+                                    <button class="accordion accr-below accr-below-parent">التاريخ</button>
+                                    <div class="panel inside-panel panel-after accr-below-child">
+                                        <div class="date-div">
+                                            <label for="start">من</label>
+                                            <div class="date-div-cont">
+                                                <input class="select-date input-date" type="text" >
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="date-div second-date">
-                                        <label for="start">الى</label>
-                                        <div class="date-div-cont">
-                                            <input class="select-date input-date" type="text" >
-                                            <i class="fas fa-calendar-alt"></i>
+                                        <div class="date-div second-date">
+                                            <label for="start">الى</label>
+                                            <div class="date-div-cont">
+                                                <input class="select-date input-date" type="text" >
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="accordion accr-below collapse-head-om">فئات</button>
-                                <div class="panel inside-panel list-collapse-om">
-                                    <form action="" method="get">
-                                        <div class="form-filter">
-                                            <label class="filter-radio">الركض
-                                                <input type="radio" checked="checked" name="radio">
-                                                <span class="checkmark"></span>
-                                              </label>
-                                              <label class="filter-radio">اليوجا
-                                                <input type="radio" name="radio">
-                                                <span class="checkmark"></span>
-                                              </label>
-                                              <label class="filter-radio">ركوب الدراجات
-                                                <input type="radio" name="radio">
-                                                <span class="checkmark"></span>
-                                              </label>
-                                              <label class="filter-radio">التمرين الخارجى
-                                                <input type="radio" name="radio">
-                                                <span class="checkmark"></span>
-                                              </label>
-                                        </div>
-                                    </form>
+                                <div class="acco-cont">
+                                    <button class="accordion accr-below accr-below-parents">فئات</button>
+                                    <div class="panel inside-panel accr-below-childs">
+                                        <form action="" method="get">
+                                            <div class="form-filter">
+                                                <label class="filter-radio">الركض
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="filter-radio">اليوجا
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="filter-radio">ركوب الدراجات
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="filter-radio">التمرين الخارجى
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +207,7 @@
                                         <span class="last-price">اقل: 100 ريال</span>
                                     </div>
                                     <div class="book-link">
-                                        <a href="#" class="book-button">احجز الان</a>
+                                        <a href="details-ar.html" class="book-button">احجز الان</a>
                                     </div>
                                 </div>
                             </div>
