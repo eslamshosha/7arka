@@ -1961,7 +1961,7 @@ html[dir=rtl] .check-group .checkmark{
 }
   
 .search-filter .accordion:after {
-    content: '\f13a';
+    content: '\f138';
     font-family: "Font Awesome 5 Free";
     border-radius: 50%;
     font-weight: bold;
@@ -1977,14 +1977,14 @@ html[dir=rtl] .search-filter .accordion:after{
 }
   
 .search-filter .active:after {
-    content: "\f139";
+    content: "\f13a";
 }
 .accr-below.accordion:after{
-    content: "\f078";
+    content: "\f054";
     color: #000;
 }
 .search-filter .accr-below.active:after {
-    content: "\f077";
+    content: "\f078";
 }
   
 .search-filter .panel {
@@ -2782,6 +2782,32 @@ html[dir=rtl] .career-form .date-div-cont i{
 }
 .career-form .dropdown-item{
     color: #828282;
+}
+.career-form .dropdown-toggle::after{
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    height: 15px;
+    width: 15px;
+    float: right;
+    margin-left: 5px;
+    border: none;
+}
+.dropup .dropdown-toggle::after{
+    content: '\f077';
+    font-family: "Font Awesome 5 Free";
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    height: 15px;
+    width: 15px;
+    float: right;
+    margin-left: 5px;
+    border: none;
 }
 /* textarea:focus, input:focus,
 .right-col .btn.dropdown-toggle:focus{

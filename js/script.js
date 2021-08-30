@@ -153,21 +153,19 @@ $(document).ready(function() {
 
 
     //search filter
-    var acc = document.getElementsByClassName("accordion");
+    var acc = $(".accordion");
     var i;
 
     for (i = 0; i < acc.length; i++) {
         $(acc[i]).click("click", function() {
-    acc[i].addEventListener( function() {
-        // this.classList.toggle("active");
-        $(this).toggleClass("active", 1500);
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        } else {
-        panel.style.maxHeight = panel.scrollHeight + 500 + "px";
-        } 
-    });
+            $(this).toggleClass("active", 1500);
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + 500 + "px";
+            }
+        });
     }
 
     // commonjs // flatpicker date input
