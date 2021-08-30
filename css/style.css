@@ -2041,8 +2041,15 @@ html[dir=rtl] .search-filter .date-div-cont i{
     /* margin-bottom: 20px; */
     border-bottom: 1px solid #f0f0f0;
 }
+/*hide arrow for input date*/
 .search-filter .second-date{
     padding-bottom: 15px;
+}
+
+.input-date::-webkit-inner-spin-button,
+.input-date::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }
 
 
