@@ -137,124 +137,135 @@
                 </div>
                 <form action="" method="get">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>الاسم الاول</label>
-                                <input type="text" id="fnname" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>الاسم الاخير</label>
-                                <input type="text" id="llname" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>البريد الالكترونى</label>
-                                <input type="text" id="ename" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group date-div required">
-                                <label>Date of Birth</label>
-                                <div class="date-div-cont">
-                                    <input class="selector input-date" type="text" >
-                                    <i class="fas fa-calendar-alt"></i>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>الاسم الاول</label>
+                                        <input type="text" id="fnname" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>الاسم الاخير</label>
+                                        <input type="text" id="llname" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>البريد الالكترونى</label>
+                                        <input type="text" id="ename" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group date-div required">
+                                        <label>Date of Birth</label>
+                                        <div class="date-div-cont">
+                                            <input class="selector input-date" type="text" placeholder="اضف يوم ميلادك">
+                                            <i class="fas fa-calendar-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>رقم الهاتف</label>
+                                        <input type="text" id="pnumber" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>النوع</label>
+                                        <select id="Suggestion" class="selectpicker" data-width="100%">
+                                            <option value="" disabled selected>اختر</option>
+                                            <option value="Suggestion">Suggestion</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="vw">VW</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>المدينة</label>
+                                        <select id="Suggestion" class="selectpicker" data-width="100%">
+                                            <option value="" disabled selected>اختر</option>
+                                            <option value="Suggestion">Suggestion</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="vw">VW</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>الجنسية</label>
+                                        <select id="Suggestion" class="selectpicker" data-width="100%">
+                                            <option value="" disabled selected>اختر</option>
+                                            <option value="Suggestion">Suggestion</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="vw">VW</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>الدرجة</label>
+                                        <select id="Suggestion" class="selectpicker" data-width="100%">
+                                            <option value="" disabled selected>اختر</option>
+                                            <option value="Suggestion">Suggestion</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="vw">VW</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>مجموع سنوات الخبرة المهنية</label>
+                                        <select id="Suggestion" class="selectpicker" data-width="100%">
+                                            <option value="" disabled selected>اختر</option>
+                                            <option value="Suggestion">Suggestion</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="vw">VW</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group required">
+                                        <label>أخبرنا المزيد عن اهتمامك بإدارة الأحداث الرياضية</label>
+                                        <textarea></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group required">
+                                        <label>Upload CV</label>
+                                        <label class="custom-file-upload">
+                                            <input type="file" class="upload-change">
+                                            <!-- <span class="upload-btn"></span> -->
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <span class="upload-btn file-txt" data-title="Upload CV">Upload CV</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="check-group">
+                                        <label class="check-label">أقر بأن المعلومات التي قدمتها دقيقة وكاملة
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="div-submit">
+                                        <input type="submit" value="ارسال">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>رقم الهاتف</label>
-                                <input type="text" id="pnumber" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>النوع</label>
-                                <select id="Suggestion" class="selectpicker" data-width="100%">
-                                    <option value="Suggestion" selected>Suggestion</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="vw">VW</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>المدينة</label>
-                                <select id="Suggestion" class="selectpicker" data-width="100%">
-                                    <option value="Suggestion" selected>Suggestion</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="vw">VW</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>الجنسية</label>
-                                <select id="Suggestion" class="selectpicker" data-width="100%">
-                                    <option value="Suggestion" selected>Suggestion</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="vw">VW</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>الدرجة</label>
-                                <select id="Suggestion" class="selectpicker" data-width="100%">
-                                    <option value="Suggestion" selected>Suggestion</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="vw">VW</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>مجموع سنوات الخبرة المهنية</label>
-                                <select id="Suggestion" class="selectpicker" data-width="100%">
-                                    <option value="Suggestion" selected>Suggestion</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="vw">VW</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group required">
-                                <label>أخبرنا المزيد عن اهتمامك بإدارة الأحداث الرياضية</label>
-                                <textarea></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group required">
-                                <label>Upload CV</label>
-                                <label class="custom-file-upload">
-                                    <input type="file" class="upload-change">
-                                    <!-- <span class="upload-btn"></span> -->
-                                    <i class="fas fa-cloud-upload-alt"></i>
-                                    <span class="upload-btn file-txt" data-title="Upload CV">Upload CV</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="check-group">
-                                <label class="check-label">أقر بأن المعلومات التي قدمتها دقيقة وكاملة
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="div-submit">
-                                <input type="submit" value="ارسال">
-                            </div>
-                        </div>
+                        <div class="col-lg-2"></div>
                     </div>
                 </form>
             </div>    
@@ -307,7 +318,8 @@
                                 <div class="form-group required">
                                     <label>نوع الرسالة</label>
                                     <select id="Suggestion" class="selectpicker" data-width="100%">
-                                        <option value="Suggestion" selected>اقتراح</option>
+                                        <option value="" disabled selected>اقتراح</option>
+                                        <option value="Suggestion">bmw</option>
                                         <option value="saab">Saab</option>
                                         <option value="vw">VW</option>
                                         <option value="audi">Audi</option>

@@ -157,8 +157,10 @@ $(document).ready(function() {
     var i;
 
     for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
+        $(acc[i]).click("click", function() {
+    acc[i].addEventListener( function() {
+        // this.classList.toggle("active");
+        $(this).toggleClass("active", 1500);
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
@@ -171,11 +173,17 @@ $(document).ready(function() {
     // commonjs // flatpicker date input
     $(".selector").flatpickr(
         {
+        }
+    );
+    //flatpicker for events page to dispaly today 
+    $(".select-date").flatpickr(
+        {
             minDate: "today",
             maxDate: new Date().fp_incr(14), // 14 days from now
             defaultDate: "today"
         }
     );
+    
     //file input
     $(".custom-file-upload .upload-change").change(function() {
         let file_val;

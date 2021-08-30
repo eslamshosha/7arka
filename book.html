@@ -129,49 +129,55 @@
             <div class="form-cont">
                 <form action="" method="get">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>First Name</label>
-                                <input type="text" id="fnname" name="fname">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>First Name</label>
+                                        <input type="text" id="fnname" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>Last Name</label>
+                                        <input type="text" id="llname" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>Email Address</label>
+                                        <input type="text" id="ename" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>Phone</label>
+                                        <input type="text" id="pnumber" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <label>PROMO CODE</label>
+                                        <input type="text" id="promo" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="check-group">
+                                        <label class="check-label">I declare that the info I’ve provided is accurate & complete
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="div-submit">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>Last Name</label>
-                                <input type="text" id="llname" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>Email Address</label>
-                                <input type="text" id="ename" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>Phone</label>
-                                <input type="text" id="pnumber" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group">
-                                <label>PROMO CODE</label>
-                                <input type="text" id="promo" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="check-group">
-                                <label class="check-label">I declare that the info I’ve provided is accurate & complete
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="div-submit">
-                                <input type="submit" value="Submit">
-                            </div>
-                        </div>
+                        <div class="col-lg-2"></div>
                     </div>
                 </form>
             </div>    
@@ -224,7 +230,8 @@
                                 <div class="form-group required">
                                     <label>Message Type</label>
                                     <select id="Suggestion" class="selectpicker" data-width="100%">
-                                        <option value="Suggestion" selected>Suggestion</option>
+                                        <option value="" disabled selected>Suggestion</option>
+                                        <option value="Suggestion">bmw</option>
                                         <option value="saab">Saab</option>
                                         <option value="vw">VW</option>
                                         <option value="audi">Audi</option>

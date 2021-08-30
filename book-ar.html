@@ -130,49 +130,55 @@
             <div class="form-cont">
                 <form action="" method="get">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>الاسم الأول</label>
-                                <input type="text" id="fnname" name="fname">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>الاسم الأول</label>
+                                        <input type="text" id="fnname" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>الاسم الاخير</label>
+                                        <input type="text" id="llname" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>عنوان البريد الالكترونى</label>
+                                        <input type="text" id="ename" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group required">
+                                        <label>رقم الهاتف</label>
+                                        <input type="text" id="pnumber" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <label>كود الخصم</label>
+                                        <input type="text" id="promo" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="check-group">
+                                        <label class="check-label">أقر بأن المعلومات التي قدمتها دقيقة وكاملة
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="div-submit">
+                                        <input type="submit" value="ارسال">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>الاسم الاخير</label>
-                                <input type="text" id="llname" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>عنوان البريد الالكترونى</label>
-                                <input type="text" id="ename" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group required">
-                                <label>رقم الهاتف</label>
-                                <input type="text" id="pnumber" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="form-group">
-                                <label>كود الخصم</label>
-                                <input type="text" id="promo" name="fname">
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="check-group">
-                                <label class="check-label">أقر بأن المعلومات التي قدمتها دقيقة وكاملة
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="div-submit">
-                                <input type="submit" value="ارسال">
-                            </div>
-                        </div>
+                        <div class="col-lg-2"></div>
                     </div>
                 </form>
             </div>
@@ -225,7 +231,8 @@
                                 <div class="form-group required">
                                     <label>نوع الرسالة</label>
                                     <select id="Suggestion" class="selectpicker" data-width="100%">
-                                        <option value="Suggestion" selected>اقتراح</option>
+                                        <option value="" disabled selected>اقتراح</option>
+                                        <option value="Suggestion">bmw</option>
                                         <option value="saab">Saab</option>
                                         <option value="vw">VW</option>
                                         <option value="audi">Audi</option>
