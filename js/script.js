@@ -167,7 +167,7 @@ $(document).ready(function() {
             }
         });
     }
-
+    
     // commonjs // flatpicker date input
     $(".selector").flatpickr(
         {

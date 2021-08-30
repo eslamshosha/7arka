@@ -1974,6 +1974,7 @@ html[dir=rtl] .check-group .checkmark{
 }
 html[dir=rtl] .search-filter .accordion:after{
     float: left;
+    transform: scalex(-1);
 }
   
 .search-filter .active:after {
@@ -2966,4 +2967,4 @@ html[dir=rtl] .contact-form {
 /*******************************************contact form*******************************************/
 .bootstrap-select .dropdown-menu li .disabled {
     display: none;
-  }
+}
