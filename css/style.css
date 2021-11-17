@@ -1219,10 +1219,10 @@ input:focus,
         background-color: #dfeaf8;
     } */
   .menu-bars {
-    display: -webkit-box; 
+    display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex; 
+    display: -webkit-flex;
     display: flex;
     -webkit-box-align: center;
     -moz-box-align: center;
@@ -1234,6 +1234,7 @@ input:focus,
     justify-content: center;
   }
   .menu-bars .lnr {
+    height: 19px;
     margin-inline-end: 8px;
     font-size: 18px;
   }
