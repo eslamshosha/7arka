@@ -1449,7 +1449,7 @@ input:focus,
   }
   .video-section {
     clip-path: polygon(0 0, 100% 0, 100% 92.5%, 20% 100%, 0 91%);
-    clip-path: none;
+    background-attachment: unset;
     height: 400px;
   }
   /*  video-section  */
